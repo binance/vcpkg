@@ -1,0 +1,148 @@
+{
+  "name": "binance-connector-cpp",
+  "version-semver": "1.0.0",
+  "description": "Binance connectors for C++: typed REST API, WebSocket API and WebSocket Streams clients for every Binance product",
+  "homepage": "https://github.com/binance/binance-connector-cpp",
+  "license": "MIT",
+  "supports": "!uwp & !android",
+  "dependencies": [
+    "boost-asio",
+    "boost-beast",
+    "boost-json",
+    "openssl",
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    },
+    "zlib"
+  ],
+  "features": {
+    "algo": {
+      "description": "The Algo Trading connector (binance::algo)"
+    },
+    "all": {
+      "description": "Every connector (long build)",
+      "dependencies": [
+        {
+          "name": "binance-connector-cpp",
+          "default-features": false,
+          "features": [
+            "algo",
+            "alpha",
+            "c2c",
+            "cms",
+            "convert",
+            "copy-trading",
+            "crypto-loan",
+            "derivatives-trading-coin-futures",
+            "derivatives-trading-options",
+            "derivatives-trading-portfolio-margin",
+            "derivatives-trading-portfolio-margin-pro",
+            "derivatives-trading-usds-futures",
+            "dual-investment",
+            "fiat",
+            "gift-card",
+            "margin-trading",
+            "mining",
+            "pay",
+            "rebate",
+            "simple-earn",
+            "spot",
+            "staking",
+            "stock-options",
+            "stocks",
+            "sub-account",
+            "vip-loan",
+            "w3w-prediction",
+            "wallet"
+          ]
+        }
+      ]
+    },
+    "alpha": {
+      "description": "The Alpha connector (binance::alpha)"
+    },
+    "c2c": {
+      "description": "The C2C connector (binance::c2c)"
+    },
+    "cms": {
+      "description": "The CMS (Announcements) connector (binance::cms)"
+    },
+    "convert": {
+      "description": "The Convert connector (binance::convert)"
+    },
+    "copy-trading": {
+      "description": "The Copy Trading connector (binance::copy_trading)"
+    },
+    "crypto-loan": {
+      "description": "The Crypto Loan connector (binance::crypto_loan)"
+    },
+    "derivatives-trading-coin-futures": {
+      "description": "The Derivatives Trading (COIN-M Futures) connector (binance::derivatives_trading_coin_futures)"
+    },
+    "derivatives-trading-options": {
+      "description": "The Derivatives Trading (Options) connector (binance::derivatives_trading_options)"
+    },
+    "derivatives-trading-portfolio-margin": {
+      "description": "The Derivatives Trading (Portfolio Margin) connector (binance::derivatives_trading_portfolio_margin)"
+    },
+    "derivatives-trading-portfolio-margin-pro": {
+      "description": "The Derivatives Trading (Portfolio Margin Pro) connector (binance::derivatives_trading_portfolio_margin_pro)"
+    },
+    "derivatives-trading-usds-futures": {
+      "description": "The Derivatives Trading (USDS-M Futures) connector (binance::derivatives_trading_usds_futures)"
+    },
+    "dual-investment": {
+      "description": "The Dual Investment connector (binance::dual_investment)"
+    },
+    "fiat": {
+      "description": "The Fiat connector (binance::fiat)"
+    },
+    "gift-card": {
+      "description": "The Gift Card connector (binance::gift_card)"
+    },
+    "margin-trading": {
+      "description": "The Margin Trading connector (binance::margin_trading)"
+    },
+    "mining": {
+      "description": "The Mining connector (binance::mining)"
+    },
+    "pay": {
+      "description": "The Pay connector (binance::pay)"
+    },
+    "rebate": {
+      "description": "The Rebate connector (binance::rebate)"
+    },
+    "simple-earn": {
+      "description": "The Simple Earn connector (binance::simple_earn)"
+    },
+    "spot": {
+      "description": "The Spot Trading connector (binance::spot)"
+    },
+    "staking": {
+      "description": "The Staking connector (binance::staking)"
+    },
+    "stock-options": {
+      "description": "The Stock Options connector (binance::stock_options)"
+    },
+    "stocks": {
+      "description": "The Stocks connector (binance::stocks)"
+    },
+    "sub-account": {
+      "description": "The Sub Account connector (binance::sub_account)"
+    },
+    "vip-loan": {
+      "description": "The VIP Loan connector (binance::vip_loan)"
+    },
+    "w3w-prediction": {
+      "description": "The W3W Prediction connector (binance::w3w_prediction)"
+    },
+    "wallet": {
+      "description": "The Wallet connector (binance::wallet)"
+    }
+  }
+}
